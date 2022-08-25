@@ -1,0 +1,9 @@
+recipe Craft Lighter
+{
+     Battery=1,
+     Aluminum=1,
+
+     Result:Lighter,
+     Sound:PutItemInBag,
+     Time:10.0
+}
