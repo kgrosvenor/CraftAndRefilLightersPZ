@@ -1,0 +1,3 @@
+version=1
+title=ISS Server Recipes Mod
+description=Adds additional recipes to the ISS PZ Server
