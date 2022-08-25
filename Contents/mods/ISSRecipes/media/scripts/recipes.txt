@@ -5,11 +5,11 @@ module ISSRecipesMod {
 
     recipe Craft Lighter
     {
-         Battery=1,
          Aluminum=1,
+         Battery,
 
          Result:Lighter,
          Sound:PutItemInBag,
-         Time:10.0,
+         Time:30.0,
     }
 }
