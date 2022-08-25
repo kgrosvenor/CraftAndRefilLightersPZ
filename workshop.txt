@@ -1,3 +1,6 @@
 version=1
+id=2853797818
 title=ISS Server Recipes Mod
 description=Adds additional recipes to the ISS PZ Server
+tags=Items;Multiplayer
+visibility=public
