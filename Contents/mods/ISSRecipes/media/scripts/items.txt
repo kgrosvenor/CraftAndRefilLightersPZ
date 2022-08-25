@@ -1,9 +1,15 @@
-recipe Craft Lighter
-{
-     Battery=1,
-     Aluminum=1,
+module ISSRecipesMod {
+    imports {
+        Base
+    }
 
-     Result:Lighter,
-     Sound:PutItemInBag,
-     Time:10.0
+    recipe Craft Lighter
+    {
+         Battery=1,
+         Aluminum=1,
+
+         Result:Lighter,
+         Sound:PutItemInBag,
+         Time:10.0,
+    }
 }
