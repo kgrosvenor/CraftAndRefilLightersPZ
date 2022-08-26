@@ -1,6 +1,6 @@
 version=1
 id=2853797818
-title=ISS Server Recipes Mod
-description=Adds additional recipes to the ISS PZ Server
+title=Craft and Refill Lighters
+description=Create a lighter with aluminum and a battery, refill with most gas containers/bottles (Gas can, Water Bottle, Pop, Wine, Whiskey)
 tags=Items;Multiplayer
 visibility=public

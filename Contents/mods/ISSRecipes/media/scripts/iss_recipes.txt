@@ -3,13 +3,22 @@ module ISSRecipesMod {
         Base
     }
 
-    recipe Craft Lighter
+    recipe Craft Empty Lighter
     {
          Aluminum=1,
          Battery,
 
-         Result:Lighter,
+         Result:EmptyLighter,
          Sound:PutItemInBag,
          Time:30.0,
+    }
+
+    recipe Refill Empty Lighter
+    {
+           EmptyLighter=1,
+           PetrolCan/PetrolPopBottle/WhiskeyPetrol/WinePetrol/WaterBottlePetrol=1,
+           Result:Lighter,
+           Time:50.0,
+           Category:Survivalist,
     }
 }
