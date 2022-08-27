@@ -1,5 +1,6 @@
 module Base
 {
+    /** Credits to MetalTrump, original author of this script, and lighter art work. **/
     item Lighter
 	{
 	    DisplayCategory = LightSource,

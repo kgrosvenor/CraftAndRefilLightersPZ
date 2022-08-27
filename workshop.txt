@@ -1,6 +1,6 @@
 version=1
 id=2853797818
 title=Craft and Refill Lighters
-description=Create a lighter with aluminum and a battery, refill with most gas containers/bottles (Gas can, Water Bottle, Pop, Wine, Whiskey)
-tags=Items;Multiplayer
+description=Craft a zippo with metal working, refill with any gas containers
+tags=Items;Multiplayer;Realistic
 visibility=public

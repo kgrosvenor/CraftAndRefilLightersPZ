@@ -5,20 +5,25 @@ module ISSRecipesMod {
 
     recipe Craft Empty Lighter
     {
+         BlowTorch=1,
          Aluminum=1,
-         Battery,
+         ScrapMetal=2,
+         RippedSheets=1,
+         keep [Recipe.GetItemTypes.Hammer],
+         keep [Recipe.GetItemTypes.WeldingMask],
 
          Result:EmptyLighter,
          Sound:PutItemInBag,
-         Time:30.0,
+         Time:200.0,
+         OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
     }
 
     recipe Refill Empty Lighter
     {
            EmptyLighter=1,
-           PetrolCan/PetrolPopBottle/WhiskeyPetrol/WinePetrol/WaterBottlePetrol=1,
+           [Recipe.GetItemTypes.Petrol]=1,
            Result:Lighter,
            Time:50.0,
-           Category:Survivalist,
+           Category:General,
     }
 }
