@@ -1,9 +1,9 @@
-module ISSRecipesMod {
+module CraftAndRefillLighters {
     imports {
         Base
     }
 
-    recipe Craft Empty Lighter
+    recipe Craft Lighter
     {
          BlowTorch=1,
          Aluminum=1,
@@ -12,18 +12,10 @@ module ISSRecipesMod {
          keep [Recipe.GetItemTypes.Hammer],
          keep [Recipe.GetItemTypes.WeldingMask],
 
-         Result:EmptyLighter,
+         Result:Lighter,
          Sound:PutItemInBag,
          Time:200.0,
          OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
-    }
-
-    recipe Refill Empty Lighter
-    {
-           EmptyLighter=1,
-           [Recipe.GetItemTypes.Petrol]=1,
-           Result:Lighter,
-           Time:50.0,
-           Category:General,
+         OnCreate:CraftAndRefillLighters.DepleteGas,
     }
 }
