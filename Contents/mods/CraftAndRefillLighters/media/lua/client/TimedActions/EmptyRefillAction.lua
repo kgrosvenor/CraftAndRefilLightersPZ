@@ -1,40 +1,41 @@
 require "TimedActions/ISBaseTimedAction"
 
-LighterRefillAction = ISBaseTimedAction:derive("LighterRefillAction");
+EmptyRefillAction = ISBaseTimedAction:derive("EmptyRefillAction");
 
-function LighterRefillAction:isValid()
+function EmptyRefillAction:isValid()
     return true;
 end
 
-function LighterRefillAction:update()
+function EmptyRefillAction:update()
 
 end
 
-function LighterRefillAction:waitToStart()
+function EmptyRefillAction:waitToStart()
     return false;
 end
 
-function LighterRefillAction:start()
+function EmptyRefillAction:start()
     self:setActionAnim("Craft");
 end
 
-function LighterRefillAction:stop()
+function EmptyRefillAction:stop()
     ISBaseTimedAction.stop(self);
 end
 
-function LighterRefillAction:perform()
+function EmptyRefillAction:perform()
+    self.character:getInventory():Remove(self.emptyLighter);
     self.fuelSource:setUsedDelta(self.fuelSource:getUsedDelta() - 0.05);
-    self.lighter:setUsedDelta(1);
+    self.character:getInventory():AddItem("Base.Lighter");
 
     ISBaseTimedAction.perform(self);
 end
 
-function LighterRefillAction:new(character, lighter, fuelSource)
+function EmptyRefillAction:new(character, emptyLighter, fuelSource)
     local o = {};
     setmetatable(o, self);
     self.__index = self;
 
-    o.lighter = lighter;
+    o.emptyLighter = emptyLighter;
     o.fuelSource = fuelSource;
     o.character = character;
 

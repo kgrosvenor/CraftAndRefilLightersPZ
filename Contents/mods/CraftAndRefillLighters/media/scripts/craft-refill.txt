@@ -5,17 +5,17 @@ module CraftAndRefillLighters {
 
     recipe Craft Lighter
     {
-         BlowTorch=1,
-         Aluminum=1,
-         ScrapMetal=2,
-         RippedSheets=1,
-         keep [Recipe.GetItemTypes.Hammer],
-         keep [Recipe.GetItemTypes.WeldingMask],
+        BlowTorch=1,
+        Aluminum=1,
+        ScrapMetal=2,
+        RippedSheets=1,
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.WeldingMask],
 
-         Result:Lighter,
-         Sound:PutItemInBag,
-         Time:200.0,
-         OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
-         OnCreate:CraftAndRefillLighters.DepleteGas,
+        Result:Lighter,
+        Sound:PutItemInBag,
+        Time:200.0,
+        OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+        OnCreate:CraftAndRefillLighters.DepleteGas,
     }
 }
