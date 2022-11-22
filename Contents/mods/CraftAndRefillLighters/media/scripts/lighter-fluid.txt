@@ -1,0 +1,62 @@
+module CraftAndRefillLighters
+{
+    imports {
+        Base
+    }
+
+    item SwanLighterFluid
+    {
+        DisplayName = Swan Universal Gas Lighter Refill,
+        DisplayCategory = Smoking,
+        Icon = Swan_Lighter_Fluid,
+        Type = Drainable,
+        Weight = 0.8,
+        UseDelta = 1,
+        UseWhileEquipped = FALSE,
+        cantBeConsolided = FALSE,
+        Tags = Butane,
+        StaticModel = CraftAndRefillLighters.SwanLighterFluid,
+        WorldStaticModel = CraftAndRefillLighters.SwanLighterFluid,
+        ReplaceOnDeplete = CraftAndRefillLighters.SwanLighterFluidEmpty,
+        UseWorldItem = TRUE
+    }
+
+    item SwanLighterFluidEmpty
+    {
+        DisplayCategory = Smoking,
+        Weight	=	0.1,
+        DisplayName	= Empty Swan Universal Gas Lighter Refill,
+        Icon	=	Swan_Lighter_Fluid_Empty,
+        StaticModel = CraftAndRefillLighters.SwanGasFluid,
+        WorldStaticModel = CraftAndRefillLighters.SwanGasFluid,
+        UseWorldItem 	= 	TRUE,
+    }
+
+    item ClipperUniversalButaneGas
+    {
+        DisplayName = Clipper Universal Butane Gas,
+        DisplayCategory = Smoking,
+        Icon = Clipper_Lighter_Fluid,
+        Type = Drainable,
+        Weight = 0.8,
+        UseDelta = 1,
+        UseWhileEquipped = FALSE,
+        cantBeConsolided = FALSE,
+        Tags = Butane,
+        StaticModel = CraftAndRefillLighters.ClipperButaneGas,
+        WorldStaticModel = CraftAndRefillLighters.ClipperButaneGas,
+        ReplaceOnDeplete = CraftAndRefillLighters.ClipperUniversalButaneGasEmpty,
+        UseWorldItem = TRUE
+    }
+
+    item ClipperUniversalButaneGasEmpty
+    {
+        DisplayCategory = Smoking,
+        Weight	=	0.1,
+        DisplayName	= Empty Clipper Universal Gas Lighter Refill,
+        Icon	=	Clipper_Lighter_Fluid_Empty,
+        StaticModel = CraftAndRefillLighters.ClipperButaneGas,
+        WorldStaticModel = CraftAndRefillLighters.ClipperButaneGas,
+        UseWorldItem 	= 	TRUE,
+    }
+}

@@ -1,0 +1,16 @@
+module CraftAndRefillLighters
+{
+    model SwanLighterFluid
+    {
+        mesh = WorldItems/lighter_fluid,
+        texture = WorldItems/lighter_fluid,
+        scale = 0.0045,
+    }
+
+    model ClipperButaneGas
+    {
+        mesh = WorldItems/butane_fluid,
+        texture = WorldItems/clipper_fluid,
+        scale = 0.0090,
+    }
+}

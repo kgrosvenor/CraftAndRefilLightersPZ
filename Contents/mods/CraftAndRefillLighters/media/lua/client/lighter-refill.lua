@@ -25,14 +25,14 @@ function CraftAndRefillLighters.doCreateMenu(player, context, items)
         local playerInv = getSpecificPlayer(player):getInventory();
 
         -- Check for the empty lighter
-        if item:getType() == "EmptyLighter" then
+        if (item:getType() == "EmptyLighter" or item:getType() == "SMEmptyLighter") then
             local hasDrawnEmptyLighterRefill = false;
             for x = 0, playerInv:getItems():size() - 1 do
                 local vItem = playerInv:getItems():get(x);
-                if (vItem:hasTag("Petrol") or vItem:getType() == "PetrolCan") and vItem:getUsedDelta() > 0 then
+                if (vItem:hasTag("Petrol") or vItem:getType() == "PetrolCan" or vItem:hasTag("Butane")) and vItem:getUsedDelta() > 0 then
                     if hasDrawnEmptyLighterRefill == false then
                         local fuelSource = vItem;
-                        context:addOption("Refill Empty Lighter with " .. vItem:getName(), item, CraftAndRefillLighters.doFillEmptyAction, player, fuelSource);
+                        context:addOption("Refuel Empty Lighter with " .. vItem:getName(), item, CraftAndRefillLighters.doFillEmptyAction, player, fuelSource);
                         hasDrawnEmptyLighterRefill = true;
                     end
                 end
@@ -44,10 +44,10 @@ function CraftAndRefillLighters.doCreateMenu(player, context, items)
             local hasDrawnLighterRefill = false;
             for x = 0, playerInv:getItems():size() - 1 do
                 local vItem = playerInv:getItems():get(x);
-                if (vItem:hasTag("Petrol") or vItem:getType() == "PetrolCan") and vItem:getUsedDelta() > 0 then
+                if (vItem:hasTag("Petrol") or vItem:getType() == "PetrolCan" or vItem:hasTag("Butane")) and vItem:getUsedDelta() > 0 then
                     if hasDrawnLighterRefill == false then
                         local fuelSource = vItem;
-                        context:addOption("Refill Lighter with " .. vItem:getName(), item, CraftAndRefillLighters.doFillGasAction, player, fuelSource);
+                        context:addOption("Refuel Lighter with " .. vItem:getName(), item, CraftAndRefillLighters.doFillGasAction, player, fuelSource);
                         hasDrawnLighterRefill = true;
                     end
                 end

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1817c8e1-1b10-422c-9478-c853bec71fa8" name="Changes" comment="Add Compatibility for Smoker mod">
+      <change afterPath="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/lua/server/Items/distribution.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/models_X/WorldItems/lighter_fluid.FBX" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/scripts/lighter-fluid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/scripts/models.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/textures/WorldItems/lighter_fluid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/textures/item_Swan_Lighter_Fluid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/textures/item_Swan_Lighter_Fluid_Empty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/lua/client/lighter.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/lua/client/lighter-refill.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/scripts/craft-refill.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/scripts/craft-lighter.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/scripts/custom-lighter.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/scripts/custom-lighter-items.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workshop.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workshop.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DqW0SatH5pDeioGWnCNMv5VRnG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Contents/mods/CraftAndRefillLighters/media/textures/WorldItems" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kiera\Zomboid\Workshop\iss-server-recipes\Contents\mods\CraftAndRefillLighters\media\textures\WorldItems" />
+      <recent name="C:\Users\kiera\Zomboid\Workshop\iss-server-recipes\Contents\mods\CraftAndRefillLighters\media\models_X\WorldItems" />
+      <recent name="C:\Users\kiera\Zomboid\Workshop\iss-server-recipes\Contents\mods\CraftAndRefillLighters\media\textures" />
+      <recent name="C:\Users\kiera\Zomboid\Workshop\iss-server-recipes\Contents\mods\CraftAndRefillLighters\media\lua\client\TimedActions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kiera\Zomboid\Workshop\iss-server-recipes\Contents\mods\CraftableLighter" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1817c8e1-1b10-422c-9478-c853bec71fa8" name="Changes" comment="" />
+      <created>1661426871756</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661426871756</updated>
+      <workItem from="1661426872988" duration="7927000" />
+      <workItem from="1661595690155" duration="8714000" />
+      <workItem from="1661609694210" duration="761000" />
+      <workItem from="1661802208818" duration="35000" />
+      <workItem from="1661802245642" duration="9908000" />
+      <workItem from="1661891425863" duration="935000" />
+      <workItem from="1661935095254" duration="645000" />
+      <workItem from="1661938601567" duration="614000" />
+      <workItem from="1662051516700" duration="2016000" />
+      <workItem from="1668256061048" duration="933000" />
+      <workItem from="1668362142229" duration="18814000" />
+      <workItem from="1668419306108" duration="7223000" />
+      <workItem from="1668805173342" duration="64000" />
+      <workItem from="1668805269333" duration="933000" />
+      <workItem from="1668968182465" duration="1241000" />
+      <workItem from="1669149638167" duration="1826000" />
+      <workItem from="1669157809395" duration="1774000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add correct folder structure">
+      <created>1661427323876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661427323876</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add poster.png">
+      <created>1661427456660</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661427456660</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add poster.png">
+      <created>1661427885276</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661427885276</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Wrap in module">
+      <created>1661429250924</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661429250924</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Rename file from items.txt to recipes.txt">
+      <created>1661430700924</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661430700924</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Rename to something other than recipes.txt">
+      <created>1661444478325</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661444478325</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Patch">
+      <created>1661609857033</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661609857033</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Patch">
+      <created>1661815304305</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661815304305</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add correct folder structure" />
+    <MESSAGE value="Add poster.png" />
+    <MESSAGE value="Wrap in module" />
+    <MESSAGE value="Rename file from items.txt to recipes.txt" />
+    <MESSAGE value="Rename to something other than recipes.txt" />
+    <MESSAGE value="Patch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Patch" />
+  </component>
+</project>
